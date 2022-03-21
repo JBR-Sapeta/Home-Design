@@ -1,0 +1,10 @@
+{
+  "name": "Home Design",
+  "start-url": "/index.html",
+  "background_color": "#ffffff",
+  "theme_color": "#081317",
+  "icons": [
+    { "src": "img/icon-512.png", "typ": "image/png", "sizes": "512x512", "purpose": "any maskable" },
+    { "src": "img/icon-192.png", "typ": "image/png", "sizes": "192x192", "purpose": "any maskable" }
+  ]
+}

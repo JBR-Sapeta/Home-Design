@@ -1,0 +1,74 @@
+
+@keyframes fadeSlide{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+@keyframes sliderZoom{
+
+  50%{
+    transform: scale(1.3);
+  }
+
+  100%{
+      transform: scale(1);
+  }
+
+
+}
+
+.hover-animation{
+  display: inline-block;
+  position: relative;
+  padding-bottom: .5rem;
+
+  &::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:0;
+    height: 0.2rem;
+    background-color: $color-white;
+    transition: width 0.25s ease-out;
+  }
+}
+
+.hover-animation:hover::before{
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+
+
+.hover-animation--b{
+  display: inline-block;
+  position: relative;
+  padding-bottom: .5rem;
+
+  &::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:0;
+    height: 0.2rem;
+    background-color: $color-black;
+    transition: width 0.25s ease-out;
+  }
+}
+
+.hover-animation--b:hover::before{
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+

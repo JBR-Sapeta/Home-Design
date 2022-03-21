@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Design Home company webpage." />
+    <meta name="keywords" content="Design Home" />
+    <meta name="author" content="Jakub Sapeta." />
+    <meta name="theme-color" content="#081317">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Home Design</title>
+    <link rel="icon" href="img/HD-64.JPG"  />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.JPG" />
+    <link rel="manifest" href="manifest.webmanifest"  />
+    
+    <link rel="stylesheet" href="css/style.css" />
+
+    
+  </head>
+
+  <body>
+    <!---------------------------------- HEADER ----------------------------------------->
+    <header class="header">
+      <div class="header__container">
+        <p class="header__baner">Home Design</p>
+        
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation--animation">
+              <a class="navigation__link hover-animation" href="#home">Home</a>
+            </li>
+            <li class="navigation--animation">
+              <a class="navigation__link hover-animation" href="#o-nas">O nas</a>
+            </li>
+            <li class="navigation--animation">
+              <a class="navigation__link hover-animation" href="#oferta">Oferta</a>
+            </li>
+            <li class="navigation--animation">
+              <a class="navigation__link hover-animation" href="#galeria">Galeria</a>
+            </li>
+            <li class="navigation--animation">
+              <a class="navigation__link hover-animation" href="#cennik">Cennik</a>
+            </li>
+            <li class="navigation--animation">
+              <a class="navigation__link hover-animation" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="mobile-navigation">
+        <button class="mobile-navigation__button"  aria-label ="Mobile navigation button.">
+          <svg class="mobile-navigation__icon mobile-navigation__icon--open">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+        </svg>
+        <svg class="mobile-navigation__icon mobile-navigation__icon--close">
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+      </svg>
+        </button>
+      </div>
+
+      
+
+      
+    </header>
+    <!---------------------------------- HOME ----------------------------------------->
+    <section id="home" >
+      <div class="home">
+        
+        <div class="slider__container">
+
+          <div class="slider__item slider__item--active">   
+              <figure  class="slider__image">
+                   <source media="(max-width:810px)" srcset="./img/slides/slide-1s.jpg,
+                   ./img/slides/slide-1s.webp" />
+                  <img src="./img/slides/slide-1x.jpg" srcset="./img/slides/slide-1x.webp" class="slider__image--cover" alt="Zdjęcie pokoju dziennego">
+              </figure>
+               <div class="slider__content" >
+                  <h3>Wnętrze twoich marzeń</h3>
+                  <p>Wsłuchamy się w Twoje potrzeby i zaprojektujemy wnętrze, które spełni wszelkie Twoje oczekiwania.
+                  Zadbamy również o to, aby realizacja projektu przebiegła sprawnie i bez żadnych problemów.
+                  </p>
+               </div>
+          </div>
+  
+          <div class="slider__item ">   
+            <figure  class="slider__image">
+              <source media="(max-width:810px)" srcset="./img/slides/slide-2s.jpg,
+              ./img/slides/slide-2s.webp" />
+             <img src="./img/slides/slide-2x.jpg" srcset="./img/slides/slide-2x.webp" class="slider__image--cover" alt="Zdjęcie sypialni">
+           </figure>
+               <div class="slider__content" >
+                  <h3>Piękno i komfort</h3>
+                  <p>Nasz doświadczony zespół projektantów dokłada wszelkich starań, aby każdy projekty był dostosowana do gustu i sposobu życia naszych klientów.
+                  Dzięki czemu każde pomieszczenie jest nienaganne stylowo, jak i w pełni funkcjonalny.</p>
+               </div>
+          </div>
+  
+          
+  
+          <div class="slider__item">   
+            <figure  class="slider__image">
+              <source media="(max-width:810px)" srcset="./img/slides/slide-3s.jpg,
+              ./img/slides/slide-3s.webp" />
+             <img src="./img/slides/slide-3x.jpg" srcset="./img/slides/slide-3x.webp" class="slider__image--cover"  alt="Zdjęcie kuchni">
+           </figure>
+               <div class="slider__content" >
+                  <h3>Dbałość o detale</h3>
+                  <p>Niezależnie od tego, czy budujesz nowy dom, czy chcesz nadać istniejącym pomieszczeniom nowy wygląd zespół Home Design zadba o najdrobniejszy szczegół Twojego nowego wnętrza.</p>
+               </div>
+          </div>
+  
+      </div>
+
+
+
+       
+      </div>
+    </section>
+    <!---------------------------------- ABOUT US ----------------------------------------->
+    <section id="o-nas" class="aboutus">
+      
+     
+      <h2 class="aboutus__header">Dlaczego warto nas wybrać?</h2>
+
+      <div class="aboutus__container">
+        
+        <div class="aboutus__item">
+
+          
+          <h3 class="aboutus__title">
+           
+            Doświadczony zespół</h3>
+          <p class="aboutus__text">Od 2001 roku Home Design zrealizował ponad 400 projektów wnętrz domów i
+            przestrzeni komercyjnych w kraju i za granicą.
+            Zdobyte doświadczenie pozwoliło nam na opracowanie najlepszych rozwiązania, tak
+            aby sprostać wymaganiom i potrzebą naszych klientów. 
+          </p>
+        </div>
+
+        <div class="aboutus__item">
+          <h3 class="aboutus__title">
+            
+            Kompleksowa obsługa </h3>
+          <p class="aboutus__text">W naszej ofercie znajdziesz między innymi: projekt i wizualizacje wnętrza, szczegółowy kosztorys, zestawienie i harmonogram prac.
+           Oferujemy również pomoc przy realizacji, nadzór nad pracami budowlanymi i kompleksową realizacje całego projektu.
+
+          </p>
+        </div>
+        
+        <div class="aboutus__item">
+          <h3 class="aboutus__title">
+            
+            Gwarancja jakości</h3>
+          <p class="aboutus__text"> Współpracujemy jedynie ze sprawdzonymi dostawcami i podwykonawcami, którzy od wielu
+            lat sprawnie i wzorowo realizują nasze aranżacje. Dzięki czemu dajemy gwarancje ,że finalny efekt nie zawiedzie naszych klientów.
+             
+          </p>
+        </div>
+        
+        <div class="aboutus__item">
+          <h3 class="aboutus__title">
+           
+            Elastyczność</h3>
+          <p class="aboutus__text">
+            Nasi klienci uczestniczą w całym procesie projektowania, od wstępnych szkiców aż po realizacje.
+            W każdym momencie na prośbę klienta możemy dokonać zmian w projekcie.
+          </p>
+        </div>
+       
+        <div class="aboutus__item">
+          <h3 class="aboutus__title">
+            
+            Oferta na każdą kieszeń</h3>
+          <p class="aboutus__text">Piękny wystrój domu nie musi wcale kosztować fortuny.
+            Nasze projekty dopasowane są do budżetu, którym dysponują nasi klienci.
+          </p>
+        </div>
+
+      
+        
+        <div class="aboutus__item">
+          <h3 class="aboutus__title">
+            
+            Najlepsze projekty</h3>
+          <p class="aboutus__text">Jesteśmy zespołem wielokrotnie nagradzanych projektantów wnętrz.
+            Nasze projekty zyskały uznanie  w kraju i za granicą,
+             czego dowodem są liczne nagrody i wyróżnienia. 
+          </p>
+        </div>
+
+      </div>
+
+      <div class="aboutus__awards" >
+
+        <picture >
+          <img src="img/log-0.webp" alt="European property awards winner 2020 "/>
+        </picture>
+        <picture >
+          <img src="img/log-1.webp" alt="International Design & Archtecture award"/>
+        </picture>
+        <picture >
+          <img src="img/log-2.webp" alt="Design Award"/>
+        </picture>
+        <picture>
+          <img src="img/log-3.webp" alt="IDA design award"/>
+        </picture>
+        <picture>
+          <img src="img/log-4.webp" alt="Innowative architecture award"/>
+        </picture>
+        <picture >
+          <img src="img/log-5.webp" alt="WAN awad"/>
+        </picture>
+        <picture >
+          <img src="img/log-8.webp" alt="European property awards winner 2021"/>
+        </picture>
+       
+        
+      </div> 
+
+      </div>
+    
+    </section>
+
+    <!---------------------------------- OFFER ----------------------------------------->
+    <section id="oferta" class="offer">
+
+     
+
+      <div class="offer__container">
+
+        <div class="offer__item">
+          <div class="offer__description">
+          <h2 class="offer__title">Projekty i aranżacje wnętrz</h2>
+            
+          <p class="offer__paragraph">Od mebli i osprzętu po podłogi i kolory, nasi utalentowani, kompetentni projektanci nie mogą się doczekać,
+             aby stworzyć atrakcyjne wizualnie pomieszczenia i dodać osobiste akcenty do Twoich najważniejszych przestrzeni. Jeżeli tylko chcesz
+            zadbamy również o realizacje, tak abyś nie musiał się niczym martwić i po prostu cieszyć się nowym domem.</p>
+          
+          </div>
+
+        </div>
+        
+        <div class="offer__item">
+          <div class="offer__content">
+            <h3 class="offer__title">Nowy dom</h3>
+            <p class="offer__text">Budujesz nowy dom lub kupujesz nowe mieszkanie i nie masz pomysłu na wykończenie ? Zrobimy to za Ciebie!
+              Niezagospodarowana przestrzeń daje ogromne możliwości dla projektantów, a nasz zespół jak nikt inny potrafi takie okazje wykorzystać i 
+              stworzyć piękne i stylowe wnętrze, które wprawi w zachwyt Ciebie i twoich znajomych.
+            </p>
+            
+          </div>
+
+          <picture class="offer__image">
+            <source media="(max-width:810px)" srcset="./img/offer/offer-1s.jpg,
+            ./img/offer/offer-1s.webp" />
+            <img src="./img/offer/offer-1x.jpg"  srcset="./img/offer/offer-1s.webp" class="offer__image--size offer__image--right" alt="Zdjęcie planów budowy" />
+          </picture>
+        </div>
+
+        
+        <div class="offer__item">
+
+         
+
+          <picture class="offer__image">
+            <source media="(max-width:810px)" srcset="./img/offer/offer-2s.jpg,
+            ./img/offer/offer-2s.webp" />
+            <img src="./img/offer/offer-2x.jpg"  srcset="./img/offer/offer-2s.webp" class="offer__image--size offer__image--left"  alt="Zdjęcie planów budowy"/>
+          </picture>
+
+          <div class="offer__content">
+            <h3 class="offer__title">Odśwież wystruj</h3>
+            <p class="offer__text">Planujesz remont i chcesz tchnąć nowe życie w swoje pomieszczenia? Nie wiesz jednak jak to zrobić ?
+              Możesz na nas liczyć. Czasami wystarczy kilka drobnych zmian aby nadać pomieszczeniom unikalnego i pięknego wyglądu, który zachwyci każdego.
+              Nasi projektanci pomogą Ci zrealizować to zadanie.
+
+            </p>
+         
+          </div>
+        </div>
+
+        
+        <div class="offer__item">
+
+          <div class="offer__content">
+            <h3 class="offer__title">Przestrzenie komercyjne</h3>
+            <p class="offer__text">Planujesz otwarcie nowego lokalu, restauracji, pomieszczenia biurowego lub innej przestrzeni komercyjnej ?
+            Chcesz aby pomieszczenie wywołało zachwyt wśród pracowników i klientów ? Z chęcią Ci w tym pomożemy. Zaprojektujemy wnętrze , które
+            będzie cieszyć oko klientów i pracowników, a przede wszystkim będzie wpełni funkcjonalne.
+            </p>
+          
+          </div>
+
+          <picture class="offer__image">
+            <source media="(max-width:810px)" srcset="./img/offer/offer-3s.jpg,
+            ./img/offer/offer-3s.webp" />
+            <img src="./img/offer/offer-3x.jpg"  srcset="./img/offer/offer-3s.webp" class="offer__image--size offer__image--right" alt="Zdjęcie restauracji"/>
+          </picture>
+        </div>
+
+
+        <div class="offer__item">
+          <picture class="offer__image">
+            <source media="(max-width:810px)" srcset="./img/offer/offer-4s.jpg,
+            ./img/offer/offer-4s.webp" />
+            <img src="./img/offer/offer-4x.jpg"  srcset="./img/offer/offer-4s.webp" class="offer__image--size offer__image--left" alt="Zdjęcia kluczy do domu" />
+          </picture>
+
+  
+
+          <div class="offer__content">
+            <h3 class="offer__title">Pakiet Premium</h3>
+            <p class="offer__text">Dla osób wymagających, ceniących swój czas lub nie posiadających doświadczenia przygotowaliśmy pakiet premium, dzięki któremu
+              o wszystkie aspekty realizacji projektu zadbają nasi eksperci. Od projektu poprzez zakup materiałów, aż po samo wykonanie. Tak abyś mógł Cieszyć się 
+              swoim nowym wnętrzem bez żadnych obaw o realizacje.</p>
+         
+          </div>
+        </div>
+    
+
+
+
+      </div>
+
+
+
+    </section>
+
+    <!---------------------------------- GALLERY ----------------------------------------->
+    <section id="galeria" class="gallery">
+
+      <h2 class="gallery__header"> Zobacz niektóre z naszych projektów</h2>
+
+      <div class="gallery__container">
+
+        <picture class="gallery__item gallery__item--1">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-1s.jpg,
+            ./img/gallery/gallery-1s.webp" />
+            <img loading="lazy" src="./img/gallery/gallery-1x.jpg"  srcset="./img/gallery/gallery-1x.webp" class="gallery__image" alt="Zdjęcie pokoju dziennego"/>
+      
+        </picture>
+
+        <picture class="gallery__item gallery__item--2">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-2s.jpg,
+            ./img/gallery/gallery-2s.webp" />
+            <img loading="lazy" src="./img/gallery/gallery-2x.jpg"  srcset="./img/gallery/gallery-2x.webp" class="gallery__image" alt="Zdjęcie pokoju dziennego"/>
+        </picture>
+
+        <picture class="gallery__item gallery__item--3">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-3s.jpg,
+          ./img/gallery/gallery-3s.webp" />
+          <img loading="lazy" src="./img/gallery/gallery-3x.jpg"  srcset="./img/gallery/gallery-3x.webp" class="gallery__image" alt="Zdjęcie Kuchni"/>
+        </picture>
+
+        <picture class="gallery__item gallery__item--4">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-4s.jpg,
+          ./img/gallery/gallery-4s.webp" />
+          <img loading="lazy" src="./img/gallery/gallery-4x.jpg"  srcset="./img/gallery/gallery-4x.webp" class="gallery__image" alt="Zdjęcie sypialni"/>
+        </picture>
+
+        <picture class="gallery__item gallery__item--5">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-5s.jpg,
+          ./img/gallery/gallery-5s.webp" />
+          <img loading="lazy" src="./img/gallery/gallery-5x.jpg"  srcset="./img/gallery/gallery-5x.webp" class="gallery__image" alt="Zdjęcie sypialni"/>
+        </picture>
+
+        <picture class="gallery__item gallery__item--6">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-6s.jpg,
+          ./img/gallery/gallery-6s.webp" />
+          <img loading="lazy" src="./img/gallery/gallery-6x.jpg"  srcset="./img/gallery/gallery-6x.webp" class="gallery__image" alt="Zdjęcie łazienki" />
+        </picture>
+
+        <picture class="gallery__item gallery__item--7">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-7s.jpg,
+          ./img/gallery/gallery-7s.webp" />
+          <img  loading="lazy" src="./img/gallery/gallery-7x.jpg"  srcset="./img/gallery/gallery-7x.webp" class="gallery__image" alt="Zdjęcie pokoju dziennego" />
+        </picture>
+
+        <picture class="gallery__item gallery__item--8">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-8s.jpg,
+          ./img/gallery/gallery-8s.webp" />
+          <img  loading="lazy" src="./img/gallery/gallery-8x.jpg"  srcset="./img/gallery/gallery-8x.webp" class="gallery__image" alt="Zdjęcie kuchni"/>
+        </picture>
+
+        <picture class="gallery__item gallery__item--9">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-9s.jpg,
+          ./img/gallery/gallery-9s.webp" />
+          <img loading="lazy" src="./img/gallery/gallery-9x.jpg"  srcset="./img/gallery/gallery-9x.webp" class="gallery__image" alt="Zdjęcie pokoju dziennego" />
+        </picture>
+
+        <picture class="gallery__item gallery__item--10">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-10s.jpg,
+          ./img/gallery/gallery-10s.webp" />
+          <img loading="lazy" src="./img/gallery/gallery-10x.jpg"  srcset="./img/gallery/gallery-10x.webp" class="gallery__image" alt="Zdjęcie łazienki"/>
+        </picture>
+
+        <picture class="gallery__item gallery__item--11">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-11s.jpg,
+          ./img/gallery/gallery-11s.webp" />
+          <img loading="lazy" src="./img/gallery/gallery-11x.jpg"  srcset="./img/gallery/gallery-11x.webp" class="gallery__image" alt="Zdjęcie sypialni"/>
+        </picture>
+
+        <picture class="gallery__item gallery__item--12">
+          <source media="(max-width:810px)" srcset="./img/gallery/gallery-12s.jpg,
+          ./img/gallery/gallery-12s.webp" />
+          <img loading="lazy" src="./img/gallery/gallery-12x.jpg"  srcset="./img/gallery/gallery-12x.webp" class="gallery__image" alt="Zdjęcie kuchni"/>
+        </picture>
+      </div>
+      <div class="gallery__view">
+        
+          <button class="btn--exit"  aria-label ="Gallery - exit button.">
+            <svg class="gallery__icon">
+              <use xlink:href="/img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+        
+        <div class="gallery__view-size">
+          <img src="img/gallery/gallery-1x.jpg" class="gallery__view-img" alt=""/>
+        </div>
+      
+        <button class="btn--prev" aria-label ="Gallery - previous slide button.">
+          <svg class="gallery__icon">
+            <use xlink:href="/img/sprite.svg#icon-circle-left"></use>
+          </svg>
+        </button>
+        <button class="btn--next" aria-label ="Gallery - next slide button.">
+          <svg class="gallery__icon">
+            <use xlink:href="/img/sprite.svg#icon-circle-right"></use>
+          </svg>
+        </button>
+       
+        
+      </div>
+      <div class="gallery__shadow"></div>
+    </section>
+
+    <section id="cennik" class="pricing">
+
+      <h2 class="pricing__header">Ile kosztują nasze usługi ? </h2>
+
+      <div class="pricing__container">
+
+        <div class="pricing__item">
+
+          <div class="pricing__content">
+          <h3 class="pricing__title">Pakiet standard</h3>
+          <p class="pricing__price">149 PLN  za m&sup2</p>
+          </div>  
+
+          <picture class="pricing__bcg ">
+            <source media="(max-width:810px)" srcset="./img/pricing/pricing-1s.jpg,
+            ./img/pricing/pricing-1s.webp" />
+            <img src="./img/pricing/pricing-1x.jpg"  srcset="./img/pricing/pricing-1x.webp" class="pricing__image" alt="Zdjęcie pokoju dziennego" />
+            
+          </picture>
+
+          <div  class="pricing__description" >
+            <p class="pricing__text">Pakiet standard skierowany jest do osób i firm, które poszukują jedynie pomysłu na urządzenie przestrzeni mieszkalnej lub użytkowej. 
+              Które z różnych względów chcą samodzielnie zrealizować projekt. Pakiet standard obejmuje: </p>
+            <ul class="pricing__list"> 
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Inwentaryzacja.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Konsultacje z zespołem projektantów.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Propozycje różnych rozwiązań. </li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Kompletny projekt wnętrz. </li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Rysunki techniczne. </li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Kosztorys i zestawienie materiałów.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="pricing__item">
+
+          <div class="pricing__content">
+          <h3 class="pricing__title">Pakiet Gold</h3>
+          <p class="pricing__price">199 PLN  za m&sup2</p>
+          </div>  
+
+          <picture class="pricing__bcg ">
+            <source media="(max-width:810px)" srcset="./img/pricing/pricing-2s.jpg,
+            ./img/pricing/pricing-2s.webp" />
+            <img src="./img/pricing/pricing-2x.jpg"  srcset="./img/pricing/pricing-2x.webp" class="pricing__image"  alt="Zdjęcie pokoju dziennego"/>
+          </picture>
+
+          <div  class="pricing__description" >
+            <p class="pricing__text">Pakiet Gold skierowany jest do osób i firm, które mają niewielkie doświadczenia w realizacji projektów wnętrz.
+              Takim klientom zapewniamy pomoc przy wyborze podwykonawców i wsparcie podczas realizacji projektu. Pakiet gold obejmuje:
+            </p>
+            <ul class="pricing__list"> 
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Inwentaryzacja.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Konsultacje z zespołem projektantów.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Propozycje różnych rozwiązań. </li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Kompletny projekt wnętrz. </li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Rysunki techniczne. </li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Kosztorys i zestawienie materiałów.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Zestawienie polecanych podwykonawców.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Konsultacje w czasie wykonania projektu.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Nadzór nad przebiegiem prac.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="pricing__item">
+
+          <div class="pricing__content">
+          <h3 class="pricing__title">Pakiet Platinium</h3>
+          <p class="pricing__price">249 PLN  za m&sup2</p>
+          </div>  
+
+          <picture class="pricing__bcg ">
+            <source media="(max-width:810px)" srcset="./img/pricing/pricing-3s.jpg,
+            ./img/pricing/pricing-3s.webp" />
+            <img src="./img/pricing/pricing-3x.jpg"  srcset="./img/pricing/pricing-3x.webp" class="pricing__image"  alt="Zdjęcie pokoju dziennego"/>
+            
+          </picture>
+          <div  class="pricing__description" >
+            <p class="pricing__text">Dla osób wymagających lub nie posiadających czasu przygotowaliśmy pakiet Platinium, który dodatkowo obejmuje
+              całkowite wykonanie projektu wnętrza. Od zakupu materiałów, aż po pełną realizacje projektu. Pakiet platinium obejmuje:</p>
+            <ul class="pricing__list"> 
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Inwentaryzacja.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Konsultacje z zespołem projektantów.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Propozycje różnych rozwiązań. </li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Kompletny projekt wnętrz. </li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Rysunki techniczne. </li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Kosztorys i zestawienie materiałów.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Zakup materiałów i elementów wyposażenia.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Prowadzenie i pełen nadzór prac budowlanych.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Konsultacje w czasie wykonania projektu.</li>
+              <li><svg class="pricing__icon">
+                <use xlink:href="/img/sprite.svg#icon-checkmark"></use>
+              </svg>Gwarancja jakości.</li>
+            </ul>
+            
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="parallax">
+      
+      <div class="parallax__bcg"></div>
+
+    </section>
+
+
+    <section id="kontakt" class="contact">
+
+      
+
+      <h2 class="contact__header">Kontakt i współpraca</h2>
+        
+        <div class="contact__container">
+          <hr class="contact__hr">
+          <div class="contact__steps">
+          <div class="contact__step" >
+            <h2>Krok 1</h2>
+            <p>Skontaktuj się z nami aby umówić się na spotkanie.
+             Zadzwoń do nas, wyślij wiadomość e-mail lub wypełnij formularz.</p>
+          </div>
+
+          <div class="contact__step" >
+            <h2>Krok 2</h2>
+            <p>Kolejnym krokiem jest spotkanie z naszymi projektantami podczas, którego omówimy wszystkie twoje potrzeby i oczekiwania.</p>
+          </div>
+
+          <div class="contact__step" >
+            <h2>Krok 3</h2>
+            <p>Na kolejnym spotkaniu przedstawimy Ci efekt pracy naszego zespołu projektantów. Jeżeli projekt spełni twoje oczekiwania przejdziemy do jego realizacji. </p>
+          </div>
+        </div>
+          <hr class="contact__hr">
+
+        </div>
+
+        
+
+      <div class="contact__form-container">
+
+        <div class="contact__form-content">
+          <h3 class="contact__form-title">Skontaktuj się z nami</h3>
+          <p class="contact__form-text">Nasze biuro otwarte jest codziennie od godziny 9:00 do 17:00 od poniedziałku do piątku. Zadzwoń lub napisz.</p>
+            <p class="contact__form-link "><a class="hover-animation--b" href="tel: 48 111 222 XXX "> 
+            <svg class="contact__form-icon">
+              <use xlink:href="/img/sprite.svg#icon-phone"></use>
+            </svg>+ 48 111 222 XXX </a></p>
+            <p class="contact__form-link"><a class="hover-animation--b" href="mailto:biuro@hdesign.pl">
+              <svg class="contact__form-icon">
+              <use xlink:href="/img/sprite.svg#icon-mail4"></use>
+            </svg>biuro@hdesign.pl</a></p>
+          <p class="contact__form-text">Dzwoniłeś i nikt nie odbierał? Wypełnij formularz, a oddzwonimy gdy tylko będzie to możliwe. </p>
+
+          <form class="contact__form">
+
+            <div>
+            <label for="full-name">Imię Nazwisko</label>
+            <input id="full-name" type="text" placeholder="Jan Kowalski" required>
+            </div>
+
+            <div>
+            <label  for="email">Adres E-mail</label>
+            <input id="email" type="email" placeholder="kowalski@poczta.pl" required>
+            </div>
+
+            <div>
+            <label  for="phone">Numer telefonu</label>
+            <input id="phone" type="tel" placeholder="111-111-111" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+            </div>
+
+            <button class="submit-form">Wyślij</button>
+
+          </form>
+
+        </div>
+        <div class="contact__form-image">
+
+          <figure class="contact__form-figure ">
+            
+              <source media="(max-width:810px)" srcset="./img/form-1s.jpg,
+              ./img/form-1s.webp" />
+              <img src="./img/form-1x.jpg" loading="lazy"  srcset="./img/form-1x.webp" class="contact__form-figure--img" alt="Zdjęcie pokoju dziennego" />
+              
+          </figure>
+
+        </div>
+
+      </div>
+
+    </section>  
+
+
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer__banner">
+          <h1 class="footer__baner">Home Design</h1>
+        </div>
+  
+  
+        <div class="footer__item">
+          <h3>ADRES</h3>
+          <ul class="footer__list ">
+          <li  class="footer__link">32-600 Oświęcim</li>
+          <li  class="footer__link">ul. Nigdzie 121</li>
+         </ul> 
+        </div>
+  
+        <div class="footer__item">
+          <h3>NAWIGACJA</h3>
+          <ul class="footer__list" >
+            <li >
+              <a class="footer__link navigation__link hover-animation" href="#home">Home</a>
+            </li>
+            <li >
+              <a class="footer__link navigation__link hover-animation" href="#o-nas">O nas </a>
+            </li>
+            <li >
+              <a class="footer__link navigation__link hover-animation" href="#oferta">Oferta</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li >
+              <a class="footer__link navigation__link hover-animation" href="#opinie">Galeria </a>
+            </li>
+            <li >
+              <a class="footer__link navigation__link hover-animation" href="#kontakt">Cennik </a>
+            </li>
+            <li >
+              <a class="footer__link navigation__link hover-animation" href="#kontakt">Kontakt </a>
+            </li>
+          </ul>
+  
+        </div>
+  
+  
+        <div class="footer__item">
+          <h3>KONTAKT</h3>
+          <ul class="footer__list ">
+            <li  >
+              <a class="footer__link hover-animation" href="tel: 48 111 222 XXX ">
+              <svg class="footer__icon">
+                <use xlink:href="/img/sprite.svg#icon-phone"></use>
+              </svg>
+              + 48 111 222 XXX </a>
+            </li>
+            <li > 
+              <a class="footer__link hover-animation" href="mailto:biuro@hdesign.pl">
+                <svg class="footer__icon">
+                  <use xlink:href="/img/sprite.svg#icon-mail4"></use>
+                </svg>
+              biuro@hdesign.pl</a>
+            </li>
+            <li >
+              <a class="footer__link hover-animation" target="_blank" rel="noopener" href="https://www.facebook.com/">
+                <svg class="footer__icon">
+                  <use xlink:href="/img/sprite.svg#icon-facebook2"></use>
+                </svg>
+              Facebook</a>
+            </li>
+            <li >
+              <a class="footer__link hover-animation" target="_blank" rel="noopener" href="https://www.instagram.com/">
+                <svg class="footer__icon">
+                  <use xlink:href="/img/sprite.svg#icon-instagram"></use>
+                </svg>
+              Instagram</a>
+            </li>
+         </ul> 
+        </div>
+  
+        <div class="footer__rights">
+          <p>Copyright &copy;  <span class="year">2025</span> by Home Design, Inc. All rights reserved.</p>
+        </div>
+  
+     </footer>
+
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
+
+
+

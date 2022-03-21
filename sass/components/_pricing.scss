@@ -1,0 +1,200 @@
+.pricing {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: $space-xhuge 0 $space-xhuge 0;
+  gap: $space-huge;
+  color: $color-white;
+
+  &__header {
+    display: block;
+    width: 100%;
+    min-height: 10rem;
+    padding: $space-xhuge;
+    text-align: center;
+    color: $color-primary;
+    font-size: $font-xhuge;
+  }
+
+  &__container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $space-xhuge;
+  }
+
+  &__item {
+    position: relative;
+    width: 50%;
+    height: 95rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  &__content {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    right: -50%;
+    transform: translateX(-50%);
+    background: linear-gradient(
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.85)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: $font-baner;
+    display: block;
+    padding: 0 $space-xlarg $space-xlarg $space-xlarg;
+  }
+
+  &__text {
+    font-size: $font-xlarg;
+    display: block;
+    padding: $space-xlarg $space-xhuge 0 $space-xhuge;
+  }
+
+  &__bcg {
+    width: 100%;
+    height: 40%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__description {
+    width: 100%;
+    height: 60%;
+    font-size: $font-xlarg;
+    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__list {
+    padding: $space-small $space-huge $space-medium $space-huge;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  &__icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 1rem 0 0;
+    fill: $color-primary;
+  }
+
+  &__list li {
+    margin: 0 0 $space-small 0;
+  }
+
+  &__list li:first-child {
+    margin: $space-medium 0 $space-small 0;
+  }
+
+  &__price {
+    font-size: $font-huge;
+    display: block;
+
+    color: $color-white;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// ----------------------- BREAKPOINT -  $bp-xlarge: 75em; (1200px) ------------------------///
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: $bp-xlarge) {
+  .pricing {
+    &__item {
+      position: relative;
+      width: 75%;
+      height: 95rem;
+    }
+
+    &__text {
+      padding: $space-larg $space-xlarg 0 $space-xlarg;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// ----------------------- BREAKPOINT -  $bp-medium: 50em; (800px) ------------------------///
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: $bp-medium) {
+  .pricing {
+    &__container {
+      width: 100%;
+    }
+
+    &__item {
+      width: 90%;
+    }
+
+    &__header {
+      font-size: $font-xlarg;
+      padding: $space-xlarg;
+    }
+
+    &__title {
+      font-size: $font-xhuge;
+    }
+    &__text {
+      font-size: $font-larg;
+    }
+
+    &__list {
+      font-size: $font-larg;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// ----------------------- BREAKPOINT -  $bp-small: 37.5em; (600px) ------------------------///
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: $bp-small) {
+  .pricing {
+    &__item {
+      width: 95%;
+      height: 90rem;
+    }
+
+    &__header {
+      font-size: $font-xlarg;
+    }
+
+    &__text {
+      padding: $space-medium $space-small 0 $space-small;
+      font-size: $font-medium;
+    }
+
+    &__list {
+      font-size: $font-medium;
+      padding: $space-small;
+    }
+  }
+}

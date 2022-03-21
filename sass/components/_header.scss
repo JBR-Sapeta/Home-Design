@@ -1,0 +1,193 @@
+.header{
+    
+    background-color:  $color-primary;
+    width:100%;
+    min-height:8.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+   
+    
+    &__container{
+        margin:$space-medium 0;
+        width:90%;
+        position:absolute;
+        transform:translateX(-50%);
+        left:50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:$space-medium;
+        z-index: 1;
+    }
+
+    &__baner{
+        
+        font-weight: 600;
+        font-size:$font-baner;
+        color:$color-white ;
+    }
+
+    &__navigation{
+        font-size:$font-xlarg;
+        
+    } 
+}
+
+
+
+.navigation{
+
+    display:flex;
+    gap:$space-xlarg;
+    justify-content:space-around;
+    list-style-type: none;
+    
+    
+    
+    &__link{
+        display: block;
+        text-decoration:none;
+        color:$color-white;
+    }
+
+    &--animation{
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: translateY(0.4rem);
+        }
+    }
+}
+
+
+
+.mobile-navigation {
+    position: absolute;
+    top:2.5rem;
+    right: 5rem;
+    visibility: hidden;
+    display: none;
+    z-index: 2;
+
+    &__button {
+      border: none;
+      background-color: $color-primary;
+      cursor: pointer;
+    }
+  
+    &__icon {
+      fill: $color-white;
+      background-color: $color-primary;
+      height: 3.6rem;
+      width: 3.6rem;
+  
+      &--open {
+        display: block;
+      }
+  
+      &--close {
+        display: none;
+      }
+    }
+}
+  
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+}
+  
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// ----------------------- BREAKPOINT -  $bp-xlarge: 75em; (1200px) ------------------------///
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: $bp-xlarge) {
+ 
+    
+    .header__navigation {
+        position: absolute;
+        width: 100%;
+        height: 120vh;
+        top: 0;
+        left: 0;
+        background-color: $color-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: 1;
+      }
+
+    .navigation {
+        align-items: center;
+        justify-content: end;
+        flex-direction: column;
+        gap: 4rem;
+        transform:translateY(50%);
+      }
+
+      .mobile-navigation {
+        visibility: visible;
+        display: block;
+    }
+
+
+    .header--open {
+
+        & .header__container{
+            width: 100%;
+        }
+
+        & .header__navigation {
+            opacity: 1;
+            visibility: visible;
+            display: block;
+            pointer-events: auto;
+        }
+
+        & .mobile-navigation__icon--close {
+            display: block;
+        }
+
+        & .mobile-navigation__icon--open {
+            display: none;
+        }
+    }
+
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// ----------------------- BREAKPOINT -  $bp-small: 37.5em; (600px) ------------------------///
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: $bp-small) {
+
+    .header{
+        min-height: 7rem;
+
+        &__baner{
+            font-size:$font-huge;
+        }
+    }    
+
+    .mobile-navigation {
+        top:2rem;
+        right: 5rem;
+        
+
+        &__icon {
+          fill: $color-white;
+          background-color: $color-primary;
+          height: 2.6rem;
+          width: 2.6rem;
+        }
+    }
+}

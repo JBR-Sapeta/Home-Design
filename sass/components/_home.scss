@@ -1,0 +1,104 @@
+.home {
+    background-color: $color-primary;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+   
+  }
+
+  .slider{
+
+    &__container{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden; 
+    }
+    
+    &__item{
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        opacity: 0;
+
+        &--active{
+            opacity: 1;
+            animation: fadeSlide 2s;
+        }
+    }   
+
+    &__content{
+        max-width: 45%;
+        position: absolute;
+        top:70%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: rgba($color-black, 0.8) ;
+        color: $color-white;
+        padding: 8rem 4rem;
+
+    }
+
+    &__content h3{
+        font-size: $font-huge;
+        
+        text-transform: uppercase;
+        padding: 0  0  2rem 0;
+    }
+
+    &__content p{
+        font-size: $font-larg;
+        
+        
+    }
+
+    &__image{
+        width: 100%;
+        height: 100vh;
+        animation: sliderZoom 31s infinite;
+
+        &--cover{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    
+    }
+
+  }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// ----------------------- BREAKPOINT -  $bp-xlarge: 62.5em; (1000px) ------------------------///
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  @media (max-width: $bp-large) {
+
+    
+    .slider{
+    
+    
+        &__content{
+            max-width: 100%;
+            top:80%;
+        }
+    
+        &__content h3{
+            font-size: $font-xlarg;
+        }
+    
+        &__content p{
+            font-size: $font-medium;
+        }
+    
+        
+    
+    }
+
+
+  }
+
+  
+

@@ -1,0 +1,137 @@
+.footer {
+  background-color: $color-primary;
+  color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: $space-medium;
+  flex-wrap: wrap;
+  padding: $space-xhuge $space-xhuge $space-medium $space-xhuge;
+  color: $color-white;
+
+  &__banner {
+    font-size: $font-xhuge;
+  }
+
+  &__item {
+    max-width: 18rem;
+    font-size: $font-xlarg;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: $space-small;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    width: 100%;
+    font-size: $font-xlarg;
+    font-weight: 600;
+    display: block;
+  }
+
+  &__list {
+    font-size: $font-xlarg;
+    font-weight: 600;
+    color: $color-white;
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+  }
+
+  &__link {
+    color: $color-white;
+    font-size: $font-larg;
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+    
+
+  }
+
+  &__icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 1rem 0 0;
+    fill: $color-white;
+  }
+
+  &__rights {
+    width: 100%;
+    height: 9rem;
+    padding: $space-xlarg;
+    text-align: center;
+    font-size: $font-small;
+  }
+}
+
+.navigation__link {
+  padding: 0 $space-small;
+
+  &:hover {
+    transform: scale(1.1);
+    
+  }
+  
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// ----------------------- BREAKPOINT -  $bp-xlarge: 75em; (1200px) ------------------------///
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: $bp-xlarge) {
+  .footer {
+    &__banner {
+      width: 100%;
+      text-align: center;
+      padding: 0 0 $space-huge 0;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// ----------------------- BREAKPOINT -  $bp-medium: 50em; (800px) ------------------------///
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: $bp-medium) {
+  .footer {
+    padding: $space-huge $space-medium $space-medium $space-medium;
+    gap: $space-small;
+
+    &__banner {
+      font-size: $font-xlarg;
+    }
+
+    &__item {
+      max-width: 17rem;
+      font-size: $font-larg;
+    }
+
+    &__link {
+      font-size: $font-medium;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// ----------------------- BREAKPOINT -  $bp-small: 37.5em; (600px) ------------------------///
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: $bp-small) {
+  .footer {
+    font-size: $font-xhuge;
+    flex-direction: column;
+    gap: $space-xlarg;
+    align-items: center;
+
+    &__item {
+      justify-content: center;
+    }
+
+    &__banner {
+      font-size: $font-xlarg;
+    }
+  }
+}
