@@ -1,1 +1,1 @@
-It is my second static web page, which has been design and build by myself. It is not perfect, but decent ;)
+It is my second static web page. The project has been design in november 2021.
