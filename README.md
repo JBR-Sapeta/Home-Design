@@ -1,6 +1,7 @@
 # Technologies 
 - SASS 7.0.1
 - Parcel 2.3.2
+- BEM
 - RWD
 - Node 16.13.2
 
